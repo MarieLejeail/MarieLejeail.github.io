@@ -1,0 +1,31 @@
+h1 {
+  color: #00A4FF;
+}
+
+.header--bouton-blue {
+  background-color: #00A4FF;
+}
+
+.header--bouton-pink {
+  background-color: #FC46D5;
+}
+
+.header--bouton-orange {
+  background-color: #FF9C20;
+}
+
+.header--button-green {
+  background-color: #7ED321;
+}
+
+.header--button-wrapper {
+  margin-bottom: 20px;
+}
+
+table {
+  background-color: blue;
+}
+
+tr {
+  background-color: pink;
+}

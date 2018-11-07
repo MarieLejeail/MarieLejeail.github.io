@@ -1,31 +1,66 @@
-h1 {
-  color: #00A4FF;
+.column,
+.hidden {
+  flex-basis: 100%;
 }
 
-.header--bouton-blue {
-  background-color: #00A4FF;
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._30 {
+    flex: 3;
+  }
+  ._33 {
+    flex: 3.3;
+  }
+  ._40 {
+    flex: 4;
+  }
+
+}
+/* Style */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+  color: #ccc;
+  background: #3CC47C;
+  margin-bottom: 70px;
 }
 
-.header--bouton-pink {
-  background-color: #FC46D5;
+.column {
+  padding: 48px 40px;
+  border: 1px solid #666;
+  margin: 0px 0;
+  background: #e9c893;
+  text-align: center;
+  color: #1e392a;
 }
 
-.header--bouton-orange {
-  background-color: #FF9C20;
+.middle {
+  padding: 0px;
 }
 
-.header--button-green {
-  background-color: #7ED321;
+.hidden {
+  /* padding: 15px;
+  border: 1px solid #000;
+  margin: 5px 0;
+  background: #000; */
 }
 
-.header--button-wrapper {
-  margin-bottom: 20px;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 0px; */
 }
 
-table {
-  background-color: blue;
-}
-
-tr {
-  background-color: pink;
+h1,
+h2 {
+  text-align: center;
+    color: #1e392a;
 }

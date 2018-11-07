@@ -1,42 +1,58 @@
-<html>
-<head>
 <link rel="stylesheet" type="text/css" href="public/styles/mystyles.css">
-</head>
-  <h1 id="header">Bonjour</h1>
-  <p id="copy">Comment vas tu?</p>
-  <div class="header--button-wrapper">
-    <button onclick="makeGreen()" class="header--bouton-blue button">rend moi vert</button>
-  </div>
-  <div class="header--button-wrapper">
-    <button onclick="sayGoodbye()" class="header--bouton-pink button">Au revoir</button>
-  </div>
-  <div class="header--button-wrapper">
-    <button onclick="answer()" class="header--bouton-orange button">Répondre</button>
-  </div>
 
-</html>
+<h1>Tic Tac Toe</h1>
+
+<h2>Made by Marie</h2>
+
+<main>
+ <div class="row">
+   <div class="hidden _30">
+   </div>
+   <div class="column middle _40">
+     <div class="row">
+       <div class="column square position_0 _33" data-position="0">
+         x
+       </div>
+       <div class="column square position_1 _33" data-position="1">
+         o
+       </div>
+       <div class="column square position_2 _33" data-position="2">
+         x
+       </div>
+     </div>
+     <div class="row">
+       <div class="column square position_3 _33" data-position="3">
+         o
+       </div>
+       <div class="column square position_4 _33" data-position="4">
+         x
+       </div>
+       <div class="column square position_5 _33" data-position="5">
+         o
+       </div>
+     </div>
+     <div class="row">
+       <div class="column square position_6 _33" data-position="6">
+         o
+       </div>
+       <div class="column square position_7 _33" data-position="7">
+         x
+       </div>
+       <div class="column square position_8 _33" data-position="8">
+         o
+       </div>
+     </div>
+   </div>
+   <div class="hidden _30">
+   </div>
+ </div>
+</main>
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-  <script src="public/javascript/mycode.js"></script>
+<script src="public/javascript/src/TicTacToe.js"></script>
 
-
-<table>
-  <tr>
-    <th class="spot" data-box='0'> - </th>
-    <th class="spot" data-box='1'>-</th>
-    <th class="spot" data-box='2'>-</th>
-  </tr>
-  <tr>
-    <th class="spot" data-box='3'>-</th>
-    <th class="spot" data-box='4'>-</th>
-    <th class="spot" data-box='5'>-</th>
-  </tr>
-  <tr>
-    <th class="spot" data-box='6'>-</th>
-    <th class="spot" data-box='7'>-</th>
-    <th class="spot" data-box='8'>-</th>
-  </tr>
-</table>
+<script src="public/javascript/src/mycode.js"></script>

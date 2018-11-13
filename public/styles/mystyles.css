@@ -35,13 +35,17 @@ body {
 
 .column {
   padding: 48px 40px;
-  border: 1px solid #666;
   margin: 0px 0;
   background: #e9c893;
   text-align: center;
   color: #1e392a;
   font-size: 32px;
   font-weight: bold;
+  height: 54px;
+}
+
+.square {
+border: 1px solid #666;
 }
 
 .middle {

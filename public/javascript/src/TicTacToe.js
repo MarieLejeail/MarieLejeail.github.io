@@ -9,10 +9,14 @@ TicTacToe.prototype.play = function() {
 };
 
 TicTacToe.prototype.move = function(position) {
+  if(this.grid[position] === '') {
   this.calculateTurn()
   this.grid[position] = this.turn;
   this.moveCount = this.moveCount + 1;
   this.calculateTurn()
+
+  }
+  
 };
 
 TicTacToe.prototype.calculateTurn = function() {
@@ -42,7 +46,7 @@ else if ((this.grid[3] === this.grid[4]) && (this.grid[3] === this.grid[5]) && (
     return(this.grid[3]);
   }
   //left diagonal
-else if ((this.grid[0] === this.grid[4]) && (this.grid[3] === this.grid[8]) && (this.grid[0] != ''))
+else if ((this.grid[0] === this.grid[4]) && (this.grid[4] === this.grid[8]) && (this.grid[0] != ''))
   {
     return(this.grid[0]);
   }
@@ -62,8 +66,11 @@ else if ((this.grid[1] === this.grid[4]) && (this.grid[1] === this.grid[7]) && (
     return(this.grid[1]);
   }
   //left column
-else ((this.grid[0] === this.grid[3]) && (this.grid[0] === this.grid[6]) && (this.grid[0] != ''))
+else if ((this.grid[0] === this.grid[3]) && (this.grid[0] === this.grid[6]) && (this.grid[0] != ''))
   {
     return(this.grid[0]);
+  }
+  else {
+    return("");
   }
 };

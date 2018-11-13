@@ -23,7 +23,7 @@ describe("TicTacToe", function() {
 
   it("alternates turns when a move is registered", function() {
     game.play();
-    game.move()
+    game.move(0)
     expect(game.turn).toEqual('O');
   });
 
@@ -54,8 +54,12 @@ describe("TicTacToe", function() {
 
   it("knows when there is a winner in the bottom row", function() {
     game.grid = ['','','','','','','X','X','X'];
-    console.log('broken test')
     expect(game.winner()).toEqual('X');
+  });
+
+  it("knows when there is not a winner", function() {
+    game.grid = ['','','','','','','','X','X'];
+    expect(game.winner()).toEqual('');
   });
 
   it("knows when there is a winner in the middle row", function() {
@@ -85,6 +89,12 @@ describe("TicTacToe", function() {
   it("knows when there is a winner in the diagonal right", function() {
     game.grid = ['','','X','','X','','X','',''];
     expect(game.winner()).toEqual('X');
+  });
+
+  it("can't do the same move twice", function() {
+    game.grid = ['O','','','','','','','',''];
+    game.move(0)
+    expect(game.grid).toEqual(['O','','','','','','','','']);
   });
 
 });

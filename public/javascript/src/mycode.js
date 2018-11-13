@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-  game = new TicTacToe();
+  var game = new TicTacToe();
   game.play();
   populateBoard();
 
@@ -9,6 +9,9 @@ $( document ).ready(function() {
 
    $('.square').click(function(){
      game.move($(this).data("position"))
+     if(game.winner()) {
+        $('.pyro').show();
+     }
      populateBoard();
    })
 

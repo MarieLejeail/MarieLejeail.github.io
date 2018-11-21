@@ -21,10 +21,14 @@ $( document ).ready(function() {
    //
    function populateBoard() {
      for (i = 0; i < game.grid.length; i++) {
-      $('.position_0');
       $('.position_' + i).text(game.grid[i])
-
     }
    }
+
+   $('.pyro').click(function(){
+     $('.pyro').hide();
+     game.play();
+     populateBoard();
+   })
 
 });

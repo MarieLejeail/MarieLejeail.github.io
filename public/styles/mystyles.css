@@ -36,7 +36,6 @@ body {
 .column {
   padding: 48px 40px;
   margin: 0px 0;
-  background: #e9c893;
   text-align: center;
   color: #1e392a;
   font-size: 32px;
@@ -45,7 +44,8 @@ body {
 }
 
 .square {
-border: 1px solid #666;
+    background: #e9c893;
+    border: 1px solid #666;
 }
 
 .middle {
@@ -69,4 +69,20 @@ h1,
 h2 {
   text-align: center;
     color: #1e392a;
+}
+
+.position_0 {
+  border-top-left-radius: 20px;
+}
+
+.position_2 {
+  border-top-right-radius: 20px;
+}
+
+.position_6 {
+  border-bottom-left-radius: 20px;
+}
+
+.position_8 {
+  border-bottom-right-radius: 20px;
 }

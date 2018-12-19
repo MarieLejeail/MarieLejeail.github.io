@@ -31,4 +31,9 @@ $( document ).ready(function() {
      populateBoard();
    })
 
+   $('.reset-button').click(function(){
+     game.play();
+     populateBoard();
+   })
+
 });
